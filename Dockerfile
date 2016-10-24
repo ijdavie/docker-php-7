@@ -28,8 +28,6 @@ ADD 30-xdebug-custom.ini /etc/php/7.0/cli/conf.d/
 # install git
 RUN apt-get --yes --force-yes install git
 
-#comsposer
-RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # install supervisord
 RUN apt-get install -y supervisor
